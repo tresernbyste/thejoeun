@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <link rel="stylesheet" href="../static//styles/english.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/static/scripts/script.js" defer></script>
+
+    <title>회화</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1><a href="/" id="logo">Ai-Project</a></h1>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href=" english">Conversation</a></li>
+                    <li><a href="">Generator</a></li>
+                    <li><a href="">ChatGPT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="conversation">
+
+            <h1>English Conversation</h1>
+            <form method="post">
+                <div class="search">
+                    <input type="text" placeholder="회화가 필요한 상황을 적어주세요." name="question">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+
+                </div>
+            </form>
+
+            {% if conversation %}
+            {% for english, korean in conversation %}
+            <div class="conv-tag">
+                <h2 id="english-speech">{{english}} <span class="material-symbols-outlined" id="sound-up"
+                        onclick="speak('{{english}}')">volume_up</span>
+                </h2>
+                <p>{{ korean}}</p>
+            </div>
+            {% endfor %}
+            {% endif %}
+            <hr><br /><br />
+
+            <h2> 지난 대화 확인하기 </h2>
+            <div class="conv-tag">
+                <h2 id="english-speech">Excuse me, I need to book a flight ticket.
+                    <span class="material-symbols-outlined" id="sound-up"
+                        onclick="speak('{{english}}')">volume_up</span>
+                </h2>
+                <p>죄송합니다, 항공표를 예약하고 싶은데요.</p>
+            </div>
+            <div class="conv-tag">
+                <h2 id="english-speech">Can you help me find a flight to New York?
+                    <span class="material-symbols-outlined" id="sound-up"
+                        onclick="speak('{{english}}')">volume_up</span>
+                </h2>
+                <p>뉴욕행 비행기표를 찾아주실 수 있나요?</p>
+            </div>
+            <div class="conv-tag">
+                <h2 id="english-speech">What are the available flight options for tomorrow?
+                    <span class="material-symbols-outlined" id="sound-up"
+                        onclick="speak('{{english}}')">volume_up</span>
+                </h2>
+                <p>내일을 위한 이용 가능한 비행기 옵션은 무엇인가요?</p>
+            </div>
+
+
+        </section>
+        <section>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

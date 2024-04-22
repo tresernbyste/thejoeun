@@ -1,0 +1,81 @@
+section {
+  width: 80rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+section h1 {
+  font-size: 2.5rem;
+  color: #91c8e4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+form {
+  display: block;
+  justify-content: center;
+}
+
+form input {
+  display: block;
+  width: 30rem;
+  margin: 0.5rem auto;
+}
+.conv-tag {
+  background-color: rgb(238, 244, 250);
+  margin: 1rem auto;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.conv-tag h2 {
+  font-size: 1.8rem;
+}
+.conv-tag p {
+  font-size: 1.5rem;
+}
+
+.search {
+  position: relative;
+  width: 48rem;
+  margin: 1rem auto;
+}
+form {
+  text-align: center;
+}
+input {
+  width: 95%;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  box-sizing: content-box;
+}
+
+#english-speech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sound-up {
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+.carousel-inner {
+  border-radius: 30px;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.753);
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.half-width {
+  width: 70rem;
+  margin: 1rem auto;
+}
